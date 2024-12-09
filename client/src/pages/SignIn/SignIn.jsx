@@ -42,7 +42,7 @@ const SignIn = () => {
       setSuccess("Login successful! Redirecting...");
       localStorage.setItem("token", response.data.token);
       setTimeout(() => {
-        navigate("/");
+        navigate("/homepage");
       }, 2000);
     } catch (err) {
       setError(
@@ -104,7 +104,7 @@ const SignIn = () => {
         </div>
         <div className="already">
           <p>Already have an account?</p>
-          <Link to="/signup">Sign up</Link>
+          <Link to="/">Sign up</Link>
         </div>
       </div>
       <div className="signup-rightt">

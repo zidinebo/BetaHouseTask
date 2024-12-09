@@ -12,11 +12,11 @@ function App() {
       <Router>
         <Routes>
           <Route element={<RootLayout />}>
-            <Route path="/" element={<Home />} />
+            <Route path="/homepage" element={<Home />} />
           </Route>
 
           <Route element={<AuthLayout />}>
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/" element={<SignUp />} />
 
             <Route path="/signin" element={<SignIn />} />
           </Route>
